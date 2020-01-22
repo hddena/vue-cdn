@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+html,body {margin:0px;padding:0px;height:100%;font-weight:400!important;}
+body {background-color:#f6f6f6;}
+#app {min-width:1024px;width:100%; height: 100%; background-color:#fff;margin:0px auto;padding:0;position:relative;}
+#app section:last-of-type{padding-bottom:50px;}
+
+
+#app:after , #app #container:after , #breadcrumb:after , .adminPower:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+
+#container{
+    position: relative;
+    min-height: 500px;
+    /*border: 2px solid #3a87d3;*/
+}
+#asideBox{
+    width: 250px;
+    /*min-height: 500px;*/
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*bottom: 0px;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #3a87d3;
+}
+#main{
+width: 100%;
+min-height: 500px;
+padding: 0px 20px 20px 280px;
+float: left;
+border: 1px solid #3a87d3;
+}
+
+.alarmRegistration , .caseRegistration , .criminalRegistration{  /*治安案件登记*/
+    /*border: 1px solid #ccc;*/
+    /*padding: 15px;*/
+
+}
+
+#footerShow{
+    text-align: center;
+    padding: 2%;
+}   
+#headerShow{
+    width: 100%;
+    height: 250px;
+    /*background-image: url('http://gaj.gz.gov.cn/static/images/ban_home.jpg');*/
+    background-image: url('http://gat.hunan.gov.cn/images/7/hngat_wp_pageBg_01.jpg');
+    background-position: top center;
+
+}
+#headerShow .title{
+    color: #fff;
+    float: left;
+    font-size: 270%;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding-left: 60px;
+    background-image: url('http://csga.changsha.gov.cn/jjzd/nets/csjj/userfile/index/favicon.ico');
+    background-position: top left;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    /*text-shadow: 1px 1px 1px lightgray, -1px  -1px 1px  #aaa;*/
+    text-shadow: #000 0 1px 0;
+}
+#headerShow img{width: 100%;}
+#breadcrumb{
+    margin: 10px auto;
+    padding: 3px;
+}
+#breadcrumb .ivu-breadcrumb{
+    width: 50%;
+    float: left;
+}
+#breadcrumb strong{
+    width: 45%;
+    float: left;
+}
+
+.formTitle {
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+#asideBox .asideTitle{
+    color: #fff;
+}
+#asideBox .ivu-collapse-content-box p span{
+    display: block;
+    line-height: 200%;
+}
+
+
+
+.adminPower{
+    width: 100%;
+    height: 100%;
+}
+.adminPower .formTitle{
+    float: left;
+    width: 100%;
+}
+.adminPower .userList , .adminPower .checkboxList{
+    float: left;
+    height: 100%;
+    min-height: 500px;
+    padding: 1%;
+    border: 1px solid #ccc;
+}
+.adminPower .userList{
+    width: 20%;
+}
+
+.adminPower .checkboxList{
+    width: 70%;
+    position: relative;
+}
+.adminPower .checkboxListBut{
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+    padding-top:6px;
+    margin-top:6px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.login{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    background-color: #000;
+    background-image: url('http://gat.hunan.gov.cn/images/9/xxgk_bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.form-container {
+    max-width: 26rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.25rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #f3f7fd;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+    display: flex;
+}
+
+.form-control-input, .form-control-select {
+    display: block;
+    width: 100%;
+    padding-left: 1.25rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #555;
+    font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+}
+
+
+.label-control {
+    position: absolute;
+    top: 0.87rem;
+    left: 1.25rem;
+    color: #555;
+    opacity: 1;
+    font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+    cursor: text;
+    transition: all 0.2s ease;
+}
+.ex-2-header {
+    padding-top: 9rem;
+    background-color: #3a87d3;
+    text-align: center;
+    min-height: 100vh;
+}
+.form-control-submit-button {
+    display: inline-block;
+    width: 40%;
+    height: 3.125rem;
+    border: 1px solid #3a87d3;
+    border-radius: 1.5rem;
+    background-color: #3a87d3;
+    color: #fff;
+    font: 700 0.875rem/0 "Open Sans", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+
+    margin-left: 5%;
+
+/*
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+*/
+}
+.form-control-submit-button:last-of-type {
+    color:#3a87d3;
+    background-color: #fff;
+}
+
+

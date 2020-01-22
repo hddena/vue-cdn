@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>example</title>
+    <link rel="shortcut icon" href="http://csga.changsha.gov.cn/jjzd/nets/csjj/userfile/index/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="#"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.cmsya.com/libs/integrity/css/cssreset.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/view-design/dist/styles/iview.css">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+    <!-- <script type="text/javascript" src="./utils/mock.js"></script> -->
+    <!-- <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script> -->
+<!-- 
+https://www.iviewui.com/docs/introduce
+ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="./utils/styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+    <script type="text/javascript" src="http://unpkg.com/view-design/dist/iview.min.js"></script>
+    <script type="text/javascript" src="./utils/util.js"></script>
+    <link rel="stylesheet" type="text/css" href="./utils/style.css">
+</head>
+<body>
+
+<div id="app">
+    <keep-alive include="asideBox">
+        <router-view></router-view>
+    </keep-alive>
+</div>
+
+<!-- 组件 Components -->
+<script src="./components/headerShow.js"></script>
+<script src="./components/footerShow.js"></script>
+<script src="./components/breadcrumb.js"></script>
+<script src="./components/asideBox.js"></script>
+
+<!-- 页面 Components -->
+<script src="./pages/login.js"></script>
+<script src="./pages/adminPower.js"></script>
+<script src="./pages/addSystemCode.js"></script>
+<script src="./pages/populationReg.js"></script>
+<script src="./pages/houseBuildInfo.js"></script>
+<script src="./pages/houseInfo.js"></script>
+<script src="./pages/populationInfo.js"></script>
+<script src="./pages/alarmRegistration.js"></script>
+<script src="./pages/criminalRegistration.js"></script>
+<script src="./pages/caseRegistration.js"></script>
+
+<!-- 入口 -->
+<script type="text/javascript" src="./utils/main.js"></script>
+</body>
+</html>
